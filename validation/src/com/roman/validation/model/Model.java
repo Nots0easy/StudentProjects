@@ -1,4 +1,4 @@
-package com.romko;
+package com.roman.validation.model;
 
 import com.sun.javaws.exceptions.InvalidArgumentException;
 import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;

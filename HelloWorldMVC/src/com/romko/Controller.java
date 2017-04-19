@@ -1,4 +1,4 @@
-package com.romko;
+package com.roman.validation.controller;
 
 import java.util.Scanner;
 
