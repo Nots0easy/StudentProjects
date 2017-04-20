@@ -1,132 +1,131 @@
 package com.roman.validation.controller;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
  * Created by Roman_Boiko1 on 4/19/2017.
  */
 public class Record {
-    private String _firstName;
-    private String _secondName;
-    private String _lastName = null;
-    private String _nickName = null;
-    private String _comment = null;
-    private HashSet<Group> _groups = new HashSet<Group>();
-    private String _mobilePhoneNumber = null;
-    private String _homePhoneNumber = null;
-    private String _SecondMobilePhoneNumber = null;
-    private String _skypeAccount = null;
-    private Address _address = null;
-    private String _addressInStringFormat = null;
-    private String _email = null;
+    private String firstName;
+    private String secondName;
+    private String lastName = null;
+    private String nickName = null;
+    private String comment = null;
+    private HashSet<Group> groups = new HashSet<Group>();
+    private String mobilePhoneNumber = null;
+    private String homePhoneNumber = null;
+    private String secondMobilePhoneNumber = null;
+    private String skypeAccount = null;
+    private Address address = null;
+    private String addressInStringFormat = null;
+    private String email = null;
 
     public Record(String firstName, String secondName) {
-        set_firstName(firstName);
-        set_secondName(secondName);
+        setFirstName(firstName);
+        setSecondName(secondName);
     }
 
-    public String get_firstName() {
-        return _firstName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void set_firstName(String _firstName) {
-        this._firstName = _firstName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String get_secondName() {
-        return _secondName;
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void set_secondName(String _secondName) {
-        this._secondName = _secondName;
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
-    public String get_lastName() {
-        return _lastName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void set_lastName(String _lastName) {
-        this._lastName = _lastName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public String get_nickName() {
-        return _nickName;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void set_nickName(String _nickName) {
-        this._nickName = _nickName;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
-    public String get_comment() {
-        return _comment;
+    public String getComment() {
+        return comment;
     }
 
-    public void set_comment(String _comment) {
-        this._comment = _comment;
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
-    public HashSet<Group> get_groups() {
-        return _groups;
+    public HashSet<Group> getGroups() {
+        return groups;
     }
 
-    public void set_groups(HashSet<Group> _groups) {
-        this._groups = _groups;
+    public void setGroups(HashSet<Group> groups) {
+        this.groups = groups;
     }
 
-    public String get_mobilePhoneNumber() {
-        return _mobilePhoneNumber;
+    public String getMobilePhoneNumber() {
+        return mobilePhoneNumber;
     }
 
-    public void set_mobilePhoneNumber(String _mobilePhoneNumber) {
-        this._mobilePhoneNumber = _mobilePhoneNumber;
+    public void setMobilePhoneNumber(String mobilePhoneNumber) {
+        this.mobilePhoneNumber = mobilePhoneNumber;
     }
 
-    public String get_homePhoneNumber() {
-        return _homePhoneNumber;
+    public String getHomePhoneNumber() {
+        return homePhoneNumber;
     }
 
-    public void set_homePhoneNumber(String _homePhoneNumber) {
-        this._homePhoneNumber = _homePhoneNumber;
+    public void setHomePhoneNumber(String homePhoneNumber) {
+        this.homePhoneNumber = homePhoneNumber;
     }
 
-    public String get_SecondMobilePhoneNumber() {
-        return _SecondMobilePhoneNumber;
+    public String getSecondMobilePhoneNumber() {
+        return secondMobilePhoneNumber;
     }
 
-    public void set_SecondMobilePhoneNumber(String _SecondMobilePhoneNumber) {
-        this._SecondMobilePhoneNumber = _SecondMobilePhoneNumber;
+    public void setSecondMobilePhoneNumber(String _SecondMobilePhoneNumber) {
+        this.secondMobilePhoneNumber = _SecondMobilePhoneNumber;
     }
 
-    public String get_skypeAccount() {
-        return _skypeAccount;
+    public String getSkypeAccount() {
+        return skypeAccount;
     }
 
-    public void set_skypeAccount(String _skypeAccount) {
-        this._skypeAccount = _skypeAccount;
+    public void setSkypeAccount(String skypeAccount) {
+        this.skypeAccount = skypeAccount;
     }
 
-    public Address get_address() {
-        return _address;
+    public Address getAddress() {
+        return address;
     }
 
-    public void set_address(Address _address) {
-        this._address = _address;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
-    public String get_addressInStringFormat() {
-        return _addressInStringFormat;
+    public String getAddressInStringFormat() {
+        return addressInStringFormat;
     }
 
-    public void set_addressInStringFormat(String _addressInStringFormat) {
-        this._addressInStringFormat = _addressInStringFormat;
+    public void setAddressInStringFormat(String addressInStringFormat) {
+        this.addressInStringFormat = addressInStringFormat;
     }
 
-    public String get_email() {
-        return _email;
+    public String getEmail() {
+        return email;
     }
 
-    public void set_email(String _email) {
-        this._email = _email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

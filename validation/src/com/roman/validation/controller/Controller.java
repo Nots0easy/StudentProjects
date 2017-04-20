@@ -11,33 +11,23 @@ import java.util.Scanner;
  */
 public class Controller {
 
-    private Model _model;
-    private View _view;
+    private Model model;
+    private View view;
 
     public Controller(Model model, View view) {
-        _model = model;
-        _view = view;
+        this.model = model;
+        this.view = view;
     }
 
-    public void processUser(){
+    public void processUser() {
         Scanner sc = new Scanner(System.in);
-        String inputLine;
+        InputNotebookRecord notebookRecord = new InputNotebookRecord(view, sc);
+        Record record = notebookRecord.inputRecord();
+        model.add(record);
 
-        while (!_model.isProcessEnded()) {
-            try {
-                if (_model.getHelloWorld() == null) {
-                    _view.printMessage(View.INPUT_HELLO);
-                } else {
-                    _view.printMessage(View.INPUT_WORLD);
-                }
-                inputLine = sc.next();
-                _model.setHelloWorld(inputLine);
-            } catch (IllegalArgumentException ex) {
-                _view.printMessage(View.INVALID_ARGUMENT);
-            }
-        }
-
-        _view.printMessage(View.RESULT + _model.getHelloWorld());
+        view.print(record.getFirstName());
+        view.print(record.getSecondName());
+        view.print(record.getEmail());
+        view.print(record.getHomePhoneNumber());
     }
-
 }

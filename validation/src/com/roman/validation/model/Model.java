@@ -1,5 +1,6 @@
 package com.roman.validation.model;
 
+import com.roman.validation.controller.Record;
 import com.sun.javaws.exceptions.InvalidArgumentException;
 import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 
@@ -11,27 +12,16 @@ import java.util.Set;
  * Created by Roman Boiko1 on 16.04.2016.
  */
 public class Model {
-    private String _helloWorld;
-    private boolean _processEnded;
+    private ArrayList<Record> notebook;
 
-    public boolean isProcessEnded() {
-        return _processEnded;
+    public Model() {
+        notebook = new ArrayList<Record>();
     }
 
-    public String getHelloWorld() {
-        return _helloWorld;
-    }
-
-    public void setHelloWorld(String string) throws IllegalArgumentException {
-        if (string.equals("Hello")){
-            _helloWorld = string;
+    public void add(Record record){
+        if (record == null){
+            throw new NullPointerException();
         }
-        else if ((string.equals("world!")) && (_helloWorld.equals("Hello"))){
-            _helloWorld += " " + string;
-            _processEnded = true;
-        }
-        else {
-            throw new IllegalArgumentException();
-        }
+        notebook.add(record);
     }
 }
