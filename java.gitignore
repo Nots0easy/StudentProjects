@@ -1,0 +1,16 @@
+# Compiled class file
+*.class
+
+# source files
+/src/*
+
+# idea confige
+.idea
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
