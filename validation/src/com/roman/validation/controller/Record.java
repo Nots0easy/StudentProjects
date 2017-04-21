@@ -26,7 +26,6 @@ public class Record {
     private Calendar createDate = null;
     private Calendar modifyDate = null;
 
-
     public Record(String firstName, String secondName) {
         createDate = new GregorianCalendar();
         modifyDate = new GregorianCalendar();
@@ -146,16 +145,12 @@ public class Record {
 
     public void setAddress(Address address) {
         this.address = address;
+        this.addressInStringFormat = address.toString();
         modifyDate.setTime(new Date(System.currentTimeMillis()));
     }
 
     public String getAddressInStringFormat() {
         return addressInStringFormat;
-    }
-
-    public void setAddressInStringFormat(String addressInStringFormat) {
-        this.addressInStringFormat = addressInStringFormat;
-        modifyDate.setTime(new Date(System.currentTimeMillis()));
     }
 
     public String getEmail() {
@@ -174,4 +169,6 @@ public class Record {
     public Calendar getModifyDate() {
         return modifyDate;
     }
+
+
 }

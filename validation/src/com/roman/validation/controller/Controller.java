@@ -25,13 +25,16 @@ public class Controller {
         Record record = notebookRecord.inputRecord();
         model.add(record);
 
-       /* view.print(record.getFirstName());
+        /*view.print(record.getFirstName());
         view.print(record.getSecondName());
         view.print(record.getShortName());
         view.print(record.getComment());
+        view.print(record.getGroups().toString());
         view.print(record.getCreateDate().getTime().toString());
         view.print(record.getModifyDate().getTime().toString());
         view.print(record.getEmail());
-        view.print(record.getHomePhoneNumber());*/
+        view.print(record.getHomePhoneNumber());
+        view.print(record.getAddressInStringFormat());
+        view.print(record.getSkypeAccount());*/
     }
 }
