@@ -23,9 +23,13 @@ public class InputNotebookRecord {
         String secondName = inputValue.inputValueWithScanner(Regexs.NAME, Messages.INPUT_SECOND_NAME);
         Record record = new Record(firstName, secondName);
         record.setLastName(inputValue.inputValueWithScanner(Regexs.NAME, Messages.INPUT_LAST_NAME));
-        record.setNickName((inputValue.inputValueWithScanner(Regexs.NICK_NAME, Messages.INPUT_NICK_NAME)));
-        record.setEmail((inputValue.inputValueWithScanner(Regexs.EMAIL, Messages.INPUT_EMAIl)));
-        record.setHomePhoneNumber((inputValue.inputValueWithScanner(Regexs.PHONE, Messages.INPUT_HOME_PHONE)));
+        record.setNickName(inputValue.inputValueWithScanner(Regexs.NICK_NAME, Messages.INPUT_NICK_NAME));
+        record.setComment(inputValue.inputValueWithScanner(Regexs.COMMENT, Messages.INPUT_COMMENT));
+        record.setEmail(inputValue.inputValueWithScanner(Regexs.EMAIL, Messages.INPUT_EMAIl));
+        record.setHomePhoneNumber(inputValue.inputValueWithScanner(Regexs.PHONE, Messages.INPUT_HOME_PHONE));
+        record.setCellPhoneNumber(inputValue.inputValueWithScanner(Regexs.PHONE, Messages.INPUT_CELL_PHONE));
+        record.setSecondCellPhoneNumber(inputValue.inputValueWithScanner(Regexs.PHONE, Messages.INPUT_SECOND_CELL_PHONE));
+
         return record;
     }
 
